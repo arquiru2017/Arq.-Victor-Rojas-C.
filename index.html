@@ -218,6 +218,7 @@ $(".pass").focusin(function(){
 
 <body>
 	<div class="nav">
+		<h1/>
   <center> <img alt="@Arq.Victor Rojas C." class="avatar float-left mr-1" src="logoweb.png"></center>
   <ul>
     <li><a class="active" href="#">Portfolio</a></li>
@@ -225,6 +226,15 @@ $(".pass").focusin(function(){
     <li><a href="#">Contactenos</a></li>
     <li><a href="#">Clientes</a></li>
   </ul>
+		
+		<form name=login>
+	<h2><span class="entypo-login"></span>Acceso</h2>
+<input type=text name=username placeholder="Usuario">
+<input type=password name=password placeholder="Contrase&ntilde;a">
+<input type=button value="Entrar" onClick="Login()">
+</form>
+		
+		
 </div>
 
 <div class="content">
@@ -265,13 +275,6 @@ $(".pass").focusin(function(){
   </div>
 </div>
 	
-	
-<form name=login>
-	<h2><span class="entypo-login"></span>Acceso</h2>
-<input type=text name=username placeholder="Usuario">
-<input type=password name=password placeholder="Contrase&ntilde;a">
-<input type=button value="Entrar" onClick="Login()">
-</form>
 
 </body>
 </html> 
