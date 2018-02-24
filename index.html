@@ -177,6 +177,22 @@ input:focus::-webkit-input-placeholder {
 
 </style>
 <SCRIPT LANGUAGE="JavaScript">
+	
+	$(function(){
+  var nav = $('.nav'),
+      navBut = $('.navBut');
+  
+  navBut.click(function(){
+    if(nav.width() === 0){
+      nav.stop().animate({ width: '15%', opacity: '1.0' }, 300);
+    } else {
+      nav.stop().animate({ width: '0', opacity: '0.0' }, 300);
+    }
+  });
+})
+	
+	
+	
 function Login(){
 var done=0;
 var username=document.login.username.value;
